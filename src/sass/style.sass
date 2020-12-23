@@ -1,0 +1,315 @@
+
+@import "_variable.sass"
+
+html,body
+    padding: 0px
+    margin: 0px
+
+//start frameworks
+.btns-arrows
+    .slick-disabled
+        color: $color6
+    button
+          background: transparent
+          border: 0px !important
+          outline: 0px !important
+          font-size: $fontSize4
+          padding: 0px 13px
+          color: $color3
+          cursor: pointer
+.main-btn-1
+    color: white
+    background-color: $color3
+    padding: 10px 80px
+    @media screen and ( max-width: $sm)
+        padding: 10px 40px
+    border-radius: 20px
+    border: 0px
+    outline: 0px !important
+    box-shadow: 2px 2px 6px 0px grey
+    cursor: pointer    
+h2
+    font-size: $fontSize2 !important
+    text-align: center
+    // margin-bottom: 0px
+    &::after
+        content: ""
+        width: 80px
+        height: 2px
+        background: $color4
+        display: block
+        margin: 25px auto
+        // margin-bottom: 0px old
+        margin-bottom: 35px //new
+.slick-slider * 
+    outline: none !important
+//end frameworks
+
+html
+    overflow-x: hidden
+    margin-top: 93px
+
+body
+    overflow: hidden
+    font-weight: 600
+    font-size: $fontSize3
+    font-family: 'Cairo', sans-serif
+    color: $color3
+    nav
+        .navbar-toggler
+            border: none
+            outline: none !important
+            .navbar-toggler-icon
+                background: none 
+                background: url('/assets/imgs/toggle.svg')
+                background-size: 100% 100%
+                width: 35px
+                height: 35px
+                // &::before
+                //     font-family: "Font Awesome 5 Free"
+                //     font-weight: 900
+                //     content: "\f0c9"
+                //     font-size: $fontSize10
+                //     color: $color4
+                    
+
+    header
+        background: url(/assets/imgs/header-side.jpg) no-repeat
+        background-position: 0px 0px
+        background-size: 510px
+        padding: 55px 0px
+        @media screen and ( max-width: $lg)
+            background-size: 400px
+            background-position: -50px 0px
+        @media screen and ( max-width: $md)
+            // background-position: -300px 0px
+        @media screen and ( max-width: $sm)
+            background: none !important
+            padding: 10px
+            text-align: center
+        h1
+            font-weight: 600
+            margin-top: 100px
+            font-size: $fontSize1
+            line-height: 70px
+            @media screen and ( max-width: $lg)
+                margin-top: 70px
+            @media screen and ( max-width: $sm)
+                margin-top: 10px
+        .mo-img
+            display: block
+            width: 500px
+            @media screen and ( max-width: $lg)
+                // margin-top: 100px
+                width: 100%
+        
+            
+
+            
+
+
+
+    #who-are-we
+        @media screen and ( max-width: $md)
+            padding: 100px 0px
+        h2
+            margin-bottom: 35px
+            @media screen and ( max-width: $md)
+                margin-bottom: 0px
+        img
+            display: block
+            width: 100%
+            @media screen and ( max-width:  $md)
+                padding: 0px 10px
+                margin-top: 50px
+            @media screen and ( max-width:  $sm)
+                margin-top: 00px
+        p
+            font-size: $fontSize5 !important
+            font-weight: 600
+            line-height: 45px
+            margin-top: 90px
+            margin-right: 100px
+            @media screen and ( max-width: $md)
+                // text-align: center
+                margin-top: 0px
+                margin-right: 0px
+            @media screen and ( max-width: $sm)
+                text-align: center
+
+
+
+
+
+
+
+
+
+
+
+    #we-offer
+        padding-top: 105px
+        .container-fl
+            background: url('/assets/imgs/we-offer.png') no-repeat center
+            background-size: cover
+            padding: 90px 130px
+            padding-bottom: 70px
+            margin-top: 35px  
+            @media screen and ( max-width:  $md)
+                padding: 90px 60px
+            @media screen and ( max-width:  $xs)
+                padding: 90px 10px
+            .multiple-items
+                .co-out
+                    padding: 0px 10px
+                    // outline: none !important
+                    .co-in
+                        display: block
+                        background-color: white
+                        padding: 10px 25px
+                        padding-top: 37px
+                        border: 1px solid $color5
+                        border-radius: 20px 
+                        text-decoration: none
+                        // width: 340px
+                        // outline: none !important
+                        img
+                            width: 160px
+                        .para-1
+                            font-size: $fontSize6
+                            color: rgb(58,191,239)
+                            font-weight: 600
+                            display: block
+                            margin: 10px 0px
+                            margin-top: 20px
+                            display: block
+                        .para-2
+                            font-size: $fontSize7
+                            line-height: 30px
+                            font-weight: 600
+                            color: $color3
+            .btns-arrows
+                margin-top: 90px
+    
+
+
+
+
+
+
+
+
+    section#Some-of-our-works
+        padding-top: 90px
+        text-align: center
+        h2
+            margin-bottom: 35px
+        .main-co
+            background: url('/assets/imgs/bg30-Ar1web.gif')
+            padding: 90px 0px
+        // The rest in the mixin
+
+
+    section#blogs
+        .main-btn-1
+            margin: 35px 0px 123px    //new
+
+
+
+
+
+
+
+
+
+
+
+    section#Clients-we-are-proud-of
+        .main-co
+            background: url('/assets/imgs/our-client-bg.jpg')
+            padding: 110px
+            background-size: 100% 100%
+            @media screen and ( max-width:  $sm)
+                // width: 100% 
+                padding: 110px 0px
+            .co
+                // padding: 0px 110px
+                display: block
+                // width: 145px 
+                padding: 0px 50px
+                @media screen and ( max-width:  $sm)
+                    // width: 100% 
+                    // padding: 0px 0px
+                    // padding: 50px 50px
+                img
+                    display: block
+                    width: 100% 
+            .btns-arrows
+                margin-top: 40px
+                margin-bottom: 10px
+    
+    
+    
+    
+    
+    
+    
+    footer
+        background: url('/assets/imgs/footer.jpg')
+        background-size: 100% 100%
+        padding: 90px
+        @media screen and ( max-width:  $md)
+            text-align: center
+        @media screen and ( max-width: $xs)
+            padding: 90px 10px
+            
+            
+        .footer-right
+            img
+                width: 215px
+                // padding: 90px 0px 35px
+        .footer-left
+            padding-top: 35px
+            .link-1
+                display: inline-block
+                img
+                    width: 200px
+            .address
+                padding: 25px 0px
+                padding-bottom: 25-12px
+                color: $color2
+            .social-icons
+                a
+                    padding: 12px
+                    font-weight: 600
+                    color: $color2
+                    font-size: $fontSize10
+                    transition: color .5s linear
+
+
+
+
+
+
+.m-title-2
+    text-align: right
+    border-right: 5px solid $color4
+    margin-right: 30px 
+    margin-top: 30px
+    margin-bottom: 30px
+    padding: 2px 0px
+    padding-right: 15px
+    
+    &::after
+        content: ""
+        display: inline-block
+        width: 0px
+        height: 0px
+        margin: 0 !important
+        background: none
+
+
+
+@import "_mixin.sass"
+
+@import "_pages.sass"

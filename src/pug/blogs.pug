@@ -1,0 +1,16 @@
+extends includes/layout.pug
+
+
+block content
+    section(id="sec-blogs")
+        h2(class="m-title-2")
+            | المقالات
+        div(class="co-1")
+            .container
+                .row
+                    -for(let i = 0; i<6; i++)
+                        +mainCoBlogs
+                +pagination
+  
+
+                        

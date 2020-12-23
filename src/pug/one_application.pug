@@ -1,0 +1,35 @@
+extends includes/layout.pug
+
+
+block content
+    section(id="sec1-one-apllication")
+        h2(class="m-title-2")
+            | تطبيق وان
+        img(src=img+"project-preview-header.png", alt="" class="wow bounceInRight" data-wow-duration="2s" data-wow-delay="0s")
+    section(id="sec2-one-apllication")
+        h2(class="m-title-2")
+            | تفاصيل المشروع
+        div(class="co-para")
+            p
+                | لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه ... بروشور او فلاير على سبيل المثال وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد تشغل المشاهد عن وضع الكثير من الملاحظات او الانتقادات للتصميم الاساسي .وخلافاَ للاعتقاد السائد فإن لوريم إيبسوم ليس نصاَ عشوائياً، بل إن له جذور في الأدب اللاتيني الكلاسيكي منذ العام 45 قبل الميلاد. من كتاب "حول أقاصي الخير والشر"
+    section(id="sec3-one-apllication" dir="ltr")
+        h2(class="m-title-2")
+            | خدلك لفة
+        div(dir="ltr" class="custom-carousel")
+            div(class="carousel-arrows")
+                button(class="btn-back hvr-backward")
+                    <i class="fas fa-angle-left"></i>
+                button(class="btn-next hvr-forward")
+                    <i class="fas fa-angle-right"></i>
+            div(class="card-carousel wow bounceInLeft" data-wow-duration="2s" data-wow-delay=".0s")
+                -for(let i = 0; i<9; i++)
+                    div(class="my-card")
+                        img(src=img + "slide-one.png", alt="")
+                
+                  
+
+
+
+
+block append script
+    script(src="js/application_one.js")

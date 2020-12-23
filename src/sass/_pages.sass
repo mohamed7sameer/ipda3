@@ -1,0 +1,158 @@
+
+#sec-some-of-our-works
+    background: url($img + 'bg30-Ar1web.gif')
+    padding-top: 1px
+    padding-bottom: 1px
+    text-align: center
+    .container
+        margin-top: 130px
+        margin-bottom: 50px
+    
+#sec-blogs
+    .co-1
+        background: url($img + 'articles.jpg') no-repeat center top
+        background-size: contain
+        .pagination-1
+            margin-top: 38px
+            margin-bottom: 96px
+      
+#sec1-one-apllication
+    img
+        display: block
+        width: 500px
+        margin: auto
+        margin-top: 80px
+        @media screen and ( max-width: $xs)
+            width: 100%
+
+#sec2-one-apllication
+    .co-para
+        background: url($img+'details-bg.png') no-repeat center center
+        background-size: cover
+        padding: 70px 
+        @media screen and ( max-width: $sm)
+            padding: 70px 10px 
+            
+        p
+            color: $color1
+            font-size: $fontSize8
+            line-height: 34px
+            margin-bottom: 0px
+            text-align: center
+
+#sec3-one-apllication
+    
+    .custom-carousel
+        direction: ltr
+        text-align: left
+        // background: #ece9e6
+        // background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%)
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-direction: column
+        overflow-x: hidden
+        .carousel-arrows
+            button
+                border: none
+                background: $color3
+                outline: none !important
+                color: $color2
+                margin: 2px
+                border-radius: 5px
+                font-size: $fontSize4
+                cursor: pointer
+                
+        .card-carousel 
+            display: flex
+            align-items: center
+            justify-content: center
+            position: relative
+            margin-bottom: 200px
+            margin-top: 17px
+            .my-card 
+                // height: 300px
+                width: 250px
+                position: relative
+                z-index: 1
+                -webkit-transform: scale(0.6) translateY(-2rem)
+                transform: scale(0.6) translateY(-2rem)
+                opacity: 0
+                cursor: pointer
+                pointer-events: none
+                background: #2e5266
+                background: linear-gradient(to top, #2e5266, #6e8898)
+                transition: 1s
+
+                &:after 
+                    content: ''
+                    position: absolute
+                    height: 2px
+                    width: 100%
+                    border-radius: 100%
+                    background-color: rgba(0,0,0,0.3)
+                    bottom: -50px
+                    filter: blur(4px)
+                    left: 0px
+                &.active 
+                    z-index: 3
+                    transform: scale(1) translateY(25px) translateX(0)
+                    opacity: 1
+                    pointer-events: auto
+                    transition: 1s
+                &.prev
+                    margin-right: -70px
+                &.next
+                    margin-left: -70px
+                &.prev,&.next 
+                    z-index: 2
+                    transform: scale(0.8) translateY(-1rem) translateX(0)
+                    opacity: 0.6
+                    pointer-events: auto
+                    transition: 1s
+                    @media screen and ( max-width:  $xs)
+                        opacity: 0
+                        
+                img
+                    width: 100%
+
+#sec-blog
+    background: url($img + 'bg30-Ar1web.gif')
+    padding: 1px
+    .m-title-2
+        @media screen and ( max-width: $sm)
+            font-size: $fontSize5
+            font-weight: bold
+
+    .co
+        background: $color2
+        padding: 1px 50px
+        width: 940px
+        margin: 50px auto
+        box-shadow: 2px 2px 19px 0px #5c5c5cd2
+        border-radius: 30px
+        @media screen and ( max-width: $md)
+            width: 95%
+        @media screen and ( max-width: $xs)
+            padding: 1px 10px
+            width: 100%
+            box-shadow: none
+            border-radius: 0px
+            
+        img
+            width: 500px
+            display: block
+            margin: 50px auto
+            border-radius: 30px
+            box-shadow: 2px 2px 9px 0px #5c5c5c57
+            @media screen and ( max-width: $sm)
+                width: 100%
+        p
+            text-align: center
+            line-height: 55px
+            font-size: $fontSize5
+            @media screen and ( max-width:  $sm)
+                font-size: $fontSize8
+                line-height: 45px
+                // font-weight: normal
+                

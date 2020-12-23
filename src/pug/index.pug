@@ -1,0 +1,69 @@
+extends includes/layout.pug
+
+block content
+  header
+    .container-fluid
+      .row
+        .col-md-5
+          img(src=img+"header.jpg", alt="header" class="mo-img wow bounceInRight" data-wow-duration="2s" data-wow-delay="0s")
+        .col-md-7
+            h1(class="wow bounceInLeft" data-wow-duration="2s" data-wow-delay="0s")
+              | ابداع تك..شريكك التقنى الأمثل لبدأ مشروعك الأن
+  section#who-are-we
+    h2(class="text-center")
+      | من نحن ؟
+    .container
+      .row
+        .col-md-5
+          img(src=img+"who-are-we.png"  class="wow bounceInRight" data-wow-duration="2s" data-wow-delay="0s"  alt=" about us")
+        .col-md-7
+          p(class="wow bounceInLeft" data-wow-duration="2s" data-wow-delay="0s")
+            | ابداع تك هى شركة برمجيات مصرية بدأت عملها فى عام اندرويد (2012 , متخصصون فى برمجة تطبيقات الهواتف وتصميم وتطوير المواقع الالكترونية و وبرامج ( ios و المبيعات والبرامج الادارية . راحة وابهار عملائنا هو ما يهمنا , نحن نعمل على ان يكون عميلنا عضوا بمجتمعنا ونزوده بكل ما يحتاجه ليصل الى النجاح الذى يتمناه وأكثر . نؤمن بقوة لشباب , وندعم افكارهم وبناء ونجاح مشاريعهم بكل ما نستطيع . هكذا بدأ الابداع بدأ الابداع وسيستمر ان شاء الله
+  section#we-offer
+    h2
+      | ما نقدمه لكم
+    div(class="container-fl")
+      div(class="multiple-items")
+        -for(var i = 0 ; i<10; i++)
+          div(class="co-out text-center  wow fadeIn" )
+            a( href="javascript:void(0)" class="co-in hvr-float")
+              img(src=img+"training.png", alt="" class="d-block mx-auto")
+              p(class="para-1")
+                | التدريب
+              p(class="para-2")
+                | some quick example text to build on the card title and make up the bulk of the cards content .
+      div(class="text-center btns-arrows")
+        button(class="arrow-right-1 hvr-forward")
+          i(class="fas fa-chevron-right")
+        button(class="arrow-left-1 hvr-backward")
+          i(class="fas fa-chevron-left")     
+  section#Some-of-our-works
+    h2
+      | بعض أعمالنا
+    div(class="main-co")
+      .container
+        .row
+          -for(let i = 0; i<6; i++)
+            +mainCoSomeOfOurWorks
+        button(class="main-btn-1 hvr-shrink")
+          | شاهد كل أعمالنا
+  section#blogs(class="text-center")
+    .container
+      .row
+        -for(let i = 0; i<4; i++)
+          +mainCoBlogs
+      button(class="main-btn-1 hvr-shrink")
+        | المزيد
+  section#Clients-we-are-proud-of(class="text-center")
+    h2
+      | عملاء نفتخر بهم
+    div(class="main-co")
+      div(class="slick-clients")
+        -for(var x = 0; x<10; x++)
+          a(href="#" class="co hvr-float wow fadeIn")
+            img(src="assets/imgs/smart.png", alt="", class="mx-auto" )
+      div(class="text-center btns-arrows")
+        button(class="arrow-right-2 hvr-forward")
+          i(class="fas fa-chevron-right")
+        button(class="arrow-left-2 hvr-backward")
+          i(class="fas fa-chevron-left")
